@@ -4,12 +4,18 @@
   "description": "network speed logging",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "migrate": "node migrate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git@github.com:elzup/speedtest-cps.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elzup/speedtest-cps.git"
+  },
   "author": "elzup",
   "license": "MIT",
   "devDependencies": {
-    "speedtest-net": "^1.2.7"
+    "speedtest-net": "^1.2.7",
+    "sqlite3": "^3.1.4"
   }
 }
