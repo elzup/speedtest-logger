@@ -2,6 +2,7 @@
 const sqlite3 = require('sqlite3').verbose()
 const path = require('path')
 const dbPath = path.resolve(__dirname, 'db', 'database.db')
+const fs = require('fs');
 
 const db = new sqlite3.Database(dbPath)
 
@@ -15,6 +16,9 @@ db.all("SELECT * FROM logs", (err, rows) => {
 		row.timeJST = new Date(jstMill)
 		return row
 	})
-	console.log(logs)
+	console.log(JSON.stringify(logs));
+	fs.writeFile('res.json', JSON.stringify(logs), function (err) {
+		console.log(err);
+	});
 })
 db.close()
