@@ -17,7 +17,7 @@
   "devDependencies": {
     "date-format": "2.1.0",
     "speedtest-net": "1.5.1",
-    "sqlite3": "3.1.13"
+    "sqlite3": "4.1.0"
   },
   "dependencies": {
     "moment": "^2.15.1",
