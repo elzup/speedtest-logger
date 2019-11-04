@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "date-format": "2.1.0",
-    "speedtest-net": "1.5.1",
+    "speedtest-net": "1.6.0",
     "sqlite3": "4.1.0"
   },
   "dependencies": {
