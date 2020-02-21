@@ -6,7 +6,8 @@ const dbPath = path.resolve(__dirname, 'db', 'database.db')
 
 const test = speedTest({
 	maxTime: 100,
-	serversUrl: 'http://www.speedtest.net/speedtest-servers-static.php?r=' + Math.random()
+	serversUrl:
+		'http://www.speedtest.net/speedtest-servers-static.php?r=' + Math.random(),
 })
 
 test.on('data', data => {
